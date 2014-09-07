@@ -68,9 +68,9 @@ filetype plugin on
 filetype indent on
 
 " Tabstops are 4 spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=3
+set shiftwidth=3
+set softtabstop=3
 set expandtab
 set autoindent
 
@@ -188,7 +188,7 @@ set complete=.,w,b,t
 set showfulltag
 
 " Set the textwidth to be 80 chars
-set textwidth=80
+"set textwidth=80
 
 " get rid of the silly characters in separators
 set fillchars = ""
@@ -212,7 +212,7 @@ set grepprg=grep\ -nH\ $*
 
 " Trying out the line numbering thing... never liked it, but that doesn't mean
 " I shouldn't give it another go :)
-set relativenumber
+" set relativenumber
 
 " Types of files to ignore when autocompleting things
 set wildignore+=*.o,*.class,*.git,*.svn
