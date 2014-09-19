@@ -68,9 +68,9 @@ filetype plugin on
 filetype indent on
 
 " Tabstops are 4 spaces
-set tabstop=3
-set shiftwidth=3
-set softtabstop=3
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 
@@ -309,6 +309,9 @@ noremap <silent> <C-7> <C-W>>
 noremap <silent> <C-8> <C-W>+
 noremap <silent> <C-9> <C-W>+
 noremap <silent> <C-0> <C-W>>
+map <S-t> :tabnew<CR>
+map <S-l> :tabnext<CR>
+map <S-h> :tabprev<CR>
 
 " Edit the vimrc file
 nmap <silent> ,ev :e $MYVIMRC<CR>
@@ -817,3 +820,7 @@ if has("gui_running")
   endif
 endif
 :nohls
+
+hi Comment ctermfg=LightBlue
+set nornu
+set number

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
+
+VIMRC=~/.vimrc
+
+if [ -f $VIMRC ];
+then
+   mv $VIMRC $VIMRC.bak
+fi
+
+mv ~/.vimrc ~/.vimrc.bak
+mv ~/.gvimrc ~/.gvimrc.bak
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/vimrc ~/.gvimrc
+
+vim +PluginInstall +qall
