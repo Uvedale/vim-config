@@ -417,7 +417,7 @@ if has("mac")
   let g:main_font = "Anonymous\\ Pro:h11"
   let g:small_font = "Anonymous\\ Pro:h2"
 else
-  let g:main_font = "DejaVu\\ Sans\\ Mono\\ 9"
+  let g:main_font = "DejaVu\\ Sans\\ Mono\\ 11"
   let g:small_font = "DejaVu\\ Sans\\ Mono\\ 2"
 endif
 
