@@ -51,6 +51,7 @@ Plugin 'vimprj'
 Plugin 'VisIncr'
 Plugin 'drmingdrmer/xptemplate'
 Plugin 'GEverding/vim-hocon'
+Plugin 'ntpeters/vim-better-whitespace'
 if !RunningInsideGit()
   Plugin 'indexer.tar.gz'
 endif
