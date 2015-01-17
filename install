@@ -12,7 +12,7 @@ fi
 mv ~/.vimrc ~/.vimrc.bak
 ln -s ~/.vim/vimrc ~/.vimrc
 
-sudo apt-get install language-pack-en silversearcher-ag
+sudo apt-get install language-pack-en silversearcher-ag Ctags
 sudo update-locale LANG=en_US.UTF-8
 
 vim +PluginInstall +qall
