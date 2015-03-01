@@ -822,6 +822,8 @@ if has("gui_running")
 endif
 :nohls
 
+colorscheme sublime
+
 hi Comment ctermfg=LightBlue
 set nornu
 set number
