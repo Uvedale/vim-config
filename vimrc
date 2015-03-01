@@ -822,7 +822,7 @@ if has("gui_running")
 endif
 :nohls
 
-colorscheme sublime
+colorscheme jellybeans
 
 hi Comment ctermfg=LightBlue
 set nornu
