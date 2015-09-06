@@ -19,7 +19,7 @@ endfunction
 
 " Get Vundle up and running
 set nocompatible
-filetype off 
+filetype off
 set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'derekwyatt/ag.vim'
@@ -102,7 +102,7 @@ set vb
 " Allow backspacing over indent, eol, and the start of an insert
 set backspace=2
 
-" Make sure that unsaved buffers that are to be put in the background are 
+" Make sure that unsaved buffers that are to be put in the background are
 " allowed to go in there (ie. the "must save first" error doesn't come up)
 set hidden
 
@@ -149,6 +149,7 @@ set guicursor=n-v-c:block-Cursor-blinkon0,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ve
 
 " set the gui options the way I like
 set guioptions=acg
+set guifont=Menlo\ Regular:h14
 
 " Setting this below makes it sow that error messages don't disappear after one second on startup.
 "set debug=msg
@@ -258,9 +259,9 @@ nmap <silent> ,n :nohls<CR>
 " put the vim directives for my file editing settings in
 nmap <silent> ,vi ovim:set ts=2 sts=2 sw=2:<CR>vim600:fdm=marker fdl=1 fdc=0:<ESC>
 
-" The following beast is something i didn't write... it will return the 
+" The following beast is something i didn't write... it will return the
 " syntax highlighting group that the current "thing" under the cursor
-" belongs to -- very useful for figuring out what to change as far as 
+" belongs to -- very useful for figuring out what to change as far as
 " syntax highlighting goes.
 nmap <silent> ,qq :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
@@ -466,9 +467,9 @@ endif
 "-----------------------------------------------------------------------------
 " AG (SilverSearcher) Settings
 "-----------------------------------------------------------------------------
-nmap ,sf :AgForCurrentFileDir 
-nmap ,sr :AgForProjectRoot 
-nmap ,se :AgForExtension 
+nmap ,sf :AgForCurrentFileDir
+nmap ,sr :AgForProjectRoot
+nmap ,se :AgForExtension
 let g:ag_results_mapping_replacements = {
 \   'open_and_close': '<cr>',
 \   'open': 'o',
@@ -699,7 +700,7 @@ function! RedirToYankRegisterF(cmd, ...)
   redir END
 endfunction
 
-command! -complete=command -nargs=+ RedirToYankRegister 
+command! -complete=command -nargs=+ RedirToYankRegister
       \ silent! call RedirToYankRegisterF(<f-args>)
 
 function! ToggleMinimap()
