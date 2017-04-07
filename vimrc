@@ -52,6 +52,10 @@ Plugin 'VisIncr'
 Plugin 'drmingdrmer/xptemplate'
 Plugin 'GEverding/vim-hocon'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+Plugin 'rdolgushin/groovy.vim'
+
 if !RunningInsideGit()
   Plugin 'indexer.tar.gz'
 endif
@@ -69,9 +73,9 @@ filetype plugin on
 filetype indent on
 
 " Tabstops are 4 spaces
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
@@ -149,7 +153,7 @@ set guicursor=n-v-c:block-Cursor-blinkon0,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ve
 
 " set the gui options the way I like
 set guioptions=acg
-set guifont=Menlo\ Regular:h14
+set guifont=Monaco\ Regular:h14
 
 " Setting this below makes it sow that error messages don't disappear after one second on startup.
 "set debug=msg
@@ -204,8 +208,8 @@ set hlsearch
 " Incrementally match the search
 set incsearch
 
-" Add the unnamed register to the clipboard
-set clipboard+=unnamed
+" Add the unnamedplus register to the clipboard
+set clipboard=unnamedplus
 
 " Automatically read a file that has changed on disk
 set autoread
@@ -419,7 +423,8 @@ if has("mac")
   let g:main_font = "Anonymous\\ Pro:h11"
   let g:small_font = "Anonymous\\ Pro:h2"
 else
-  let g:main_font = "DejaVu\\ Sans\\ Mono\\ 11"
+ " let g:main_font = "DejaVu\\ Sans\\ Mono\\ 11"
+  let g:main_font = "Monaco\\ Regular\\ 11"
   let g:small_font = "DejaVu\\ Sans\\ Mono\\ 2"
 endif
 
@@ -828,3 +833,9 @@ colorscheme jellybeans
 hi Comment ctermfg=LightBlue
 set nornu
 set number
+
+"-----------------------------------------------------------------------------
+" vim-notes settings
+"-----------------------------------------------------------------------------
+let g:notes_directories = ['~/notes']
+let g:notes_smart_quotes = 0
