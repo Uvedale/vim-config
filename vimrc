@@ -809,6 +809,7 @@ iab Taht       That
 iab taht       that
 iab Teh        The
 iab teh        the
+iab mabye      maybe
 
 "-----------------------------------------------------------------------------
 " Set up the window colors and size
